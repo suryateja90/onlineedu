@@ -1,0 +1,84 @@
+<section id="pg-about-section">
+    <div class="container">
+    <div class="row pg-about-first-section col-gap">
+    <div class="col-lg-7">
+    <h2><p>About <b>Program</b></p>
+    </h2>
+    <p class="pg-about-description">This online Data Science and Artificial Intelligence course aims to make you master in all the basic and advanced level skills in the various tools and technologies involved in the field of Data Science, Machine Learning, Deep Learning, and Artificial Intelligence.</p>
+    <div class="pg-about-key-highlight">
+    <h3>Key <b>Highlights</b></h3>
+    <div class="pg-about-key-feature-wrapper">
+    <div class="row">
+    <div class="col-md-6" *ngFor="let h of keyhighlights">
+    <div class="pg-about-key-feature-wrap">
+    <i class="bi bi-check-circle"></i>
+    <span>{{h.features}}</span>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="right-widgets">
+         <div class="info-widget">
+            <ul class="list-group">
+                <li class="list-group-item"> <h4>Contact us</h4>
+                <span>1-800-982-536</span>
+                <span style="float: right;"><i class="bi bi-telephone"></i></span>
+                <div>
+                    (Toll Free)
+                </div>
+                </li>
+              </ul>
+         </div>   
+        </div>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <form class="needs-validation mt-3" novalidate>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="inputEmail" placeholder="Name" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="inputPassword" placeholder="email" required>
+                        <div class="invalid-feedback">Please enter your password to continue.</div>
+                    </div>
+        
+                    <span>inquiry for:  </span> &nbsp;
+                    
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="radioMale">
+                        <label class="form-check-label" for="radioMale">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" class="form-check-input" name="gender" id="radioFemale">
+                        <label class="form-check-label" for="radioFemale">Female</label>
+                    </div>
+        
+                    <div class="mb-3" style="margin-top: 8px;">
+                    <div class="form-group">
+                    <select class="form-select custom-select" name="experience" id="experience" aria-label="experience">
+                        <option value="">Total Work experience*</option>
+                        <option value="No Experience">No Experience</option>
+                        <option value="0-1">0-1</option>
+                        <option value="1-3">1-3</option>
+                        <option value="3-5">3-5</option>
+                        <option value="5-8">5-8</option>
+                        <option value="8+">8+</option>
+                    </select>
+                    </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary">submit</button>
+                          </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    </section>

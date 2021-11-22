@@ -1,0 +1,23 @@
+.ftco-section {
+    padding: 7em 0;
+    position: relative;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.align-self-stretch {
+    -ms-flex-item-align: stretch!important;
+    align-self: stretch!important;
+}
+
+.container-width {
+    max-width: 1140px;
+}

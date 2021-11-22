@@ -1,0 +1,89 @@
+#pg-about-section {
+    padding: 70px 0 20px;
+    background-color: #fff
+}
+
+#pg-about-section h2 {
+    font-size: 30px;
+    line-height: 41px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 20px
+}
+
+.pg-about-description {
+    font-size: 15px;
+    line-height: 26px;
+    color: #000;
+    margin-bottom: 25px
+}
+
+.pg-about-description .ip-read-more {
+    color: #1289ee;
+    font-weight: 600;
+    display: block;
+    margin-top: 10px
+}
+
+.pg-about-first-section {
+    margin-bottom: 80px
+}
+
+.pg-about-key-highlight {
+    background-color: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,.08);
+    border-radius: 4px;
+    border-top: 2px solid #729df5;
+    padding: 30px 30px 0
+}
+
+.pg-about-key-highlight h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 25px
+}
+
+.pg-about-key-feature-wrap {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 30px
+}
+
+.pg-about-key-feature-wrap i {
+    /* background-image: url(../images/master-course-sprite.svg); */
+    width: 21px;
+    height: 21px;
+    min-width: 21px;
+    content: "";
+    display: inline-block;
+    margin-right: 16px;
+    background-position: -221px -173px
+}
+
+.pg-about-key-feature-wrap span {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000
+}
+
+.col-gap {
+    column-gap: 13rem;
+}
+
+.btn-primary {
+    color: #0d6efd;
+    background-color: #fff;
+    border-color: #0d6efd;
+    padding: 8px 53px 5px;
+    border-radius: 1px;
+}
+
+.custom-select, .custom-select:hover {
+ border: none;
+ border-bottom: 1px solid #d3d3dd;
+ border-radius: 1px;   
+}

@@ -1,0 +1,34 @@
+<div class="container">
+<h2>Course Content</h2>
+
+<div class="card text-center">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-md-7">
+                <span><strong>Welcome to the course! Here we will help you get started in the best conditions.</strong></span>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <span>14 lectures </span>
+                <span>42 mins</span>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+            <ngb-accordion>
+            <ngb-panel [disabled]="disabled" [cardClass]="accordion-item" *ngFor="let val of courseList">
+                <ng-template ngbPanelHeader>
+                    <h2>
+                        <button type="button" class="accordion-button collapsed" ngbPanelToggle>{{val.title}}</button>									
+                    </h2>
+                </ng-template>
+                <ng-template ngbPanelContent>
+                    <p>{{val.content}}</p>
+                </ng-template>
+              </ngb-panel>
+            </ngb-accordion>
+
+    
+        </div>
+</div>
+</div>

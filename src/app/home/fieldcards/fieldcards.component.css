@@ -1,0 +1,73 @@
+.feature_area {
+    padding-bottom: 100px;
+}
+
+.section_gap_top {
+    padding-top: 130px;
+}
+
+.container-width {
+    max-width: 1140px;
+}
+
+.main_title {
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.main_title h2 {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.main_title p {
+    font-size: 16px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.single_feature {
+    position: relative;
+    background: #f9f9ff;
+    padding: 40px 36px;
+    margin-bottom: 30px;
+    -webkit-transition: all .3s ease 0s;
+    -moz-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.single_feature .icon span {
+    font-size: 30px;
+}
+
+.flaticon-student:before {
+    content: "\f100";
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    font-family: Flaticon;
+    font-size: 48px;
+    font-style: normal;
+    margin-left: 0px;
+    color: #002347;
+}
+
+.single_feature h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.single_feature p {
+    margin-bottom: 0;
+}
+
+.desc  {
+    line-height: 25px;
+    font-size: 16px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
+    color: #7b838a;
+}

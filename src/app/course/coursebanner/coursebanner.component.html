@@ -1,0 +1,60 @@
+<div class="course-banner">
+    <div class="container-fluid">
+      <div class="inner-panel">
+        <div class="row">
+          <div class="col-sm-9"> 
+            <div class="action-module">
+              <a href="programs.html" class="btn btn-register"> Register Now</a>
+              <label for="courseCheck" class="checkbox notice-box">
+                <span>
+                  <input type="checkbox" name="i_agreed" id="courseCheck">
+                </span>
+                I would like to receive email from iTalgo and learn about other offerings related to Big Data.
+              </label>
+              <div class="rating">
+                <i>Rating :</i>
+                <span style="margin-left:11px;">
+                    <i class="bi bi-star istar" style="color: #fff;"></i>
+                    <i class="bi bi-star istar" style="color: #fff;"></i>
+                    <i class="bi bi-star istar" style="color: #fff;"></i>
+                    <i class="bi bi-star istar" style="color: #fff;"></i>
+                </span>
+              </div>
+            </div>
+            <div class="course-overview">
+              <h3 class="course-title">Learn Big Data</h3>
+              <p>The program has been co-created and delivered by senior industry professionals. The curriculum will help you get a visceral understanding of the entire data value chain - the flow of information from inception to analysis to insight - that is essential to drawing insights from big data.</p>
+
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="video-link">
+              <a class="html5lightbox" title="Video Gallery" href="https://youtu.be/P_fN0GTzWOw"><i class="fa fa-video-camera" aria-hidden="true" style="opacity:1;font-size: 20px;color: black;background:white;padding: 10px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="line tabbox" *ngFor="let t of tabs; index as i" (click)="tabClick(i)"  [ngClass]="{'active': t.title === currentTab}">
+            {{t.title}}
+        </span>
+
+        <!-- <ul class="nav nav-tabs">
+          <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link">Profile</a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link">Messages</a>
+          </li>
+      </ul> -->
+
+        <span class="line" style="width: 24%;">
+            <h4 style="float: right;">A$30.50</h4>
+        </span>
+      </div>
+    </div>
+  </div>

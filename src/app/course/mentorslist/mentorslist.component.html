@@ -1,0 +1,37 @@
+<section id="trainers" class="trainers">
+    
+  <!-- <div class="row">
+    <div class="col-md-3">
+      <h4>Mentors</h4>
+    </div>
+  </div> -->
+
+    <div class="container aos-init aos-animate" data-aos="fade-up" style="row-gap:2rem;">
+      <!-- <div class="col-lg-8">
+        <h2><b>Mentors</b></h2>
+      </div> -->
+      <h2><b>Mentors</b></h2>
+      <div class="row aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div  class="col-lg-4 col-md-6 d-flex align-items-stretch" *ngFor="let v of mentorData">
+               
+                <div class="member">
+                  <img src="{{v.img}}" class="ment-img" alt="">
+                  <div class="member-content">
+                    <h4>{{v.name}}</h4>
+                    <span>{{v.course}}</span>
+                    <p>
+                      {{v.desc}}
+                    </p>
+                    <div class="social">
+                      <a href=""><i class="bi bi-twitter"></i></a>
+                      <a href=""><i class="bi bi-facebook"></i></a>
+                      <a href=""><i class="bi bi-instagram"></i></a>
+                      <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+         
+              </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,84 @@
+<section>
+    <div class="container">
+
+        <app-topbar></app-topbar>
+
+    <!-- header part starts-->
+        <nav class="position-relative navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/reebok.png" alt="" width="106">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="side-menu" data-target="#sideMenuHeaders02"
+                aria-controls="sideMenuHeaders02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
+                    <li class="nav-item me-2"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="#">Company</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                </ul>
+                <div class="ms-auto"><a class="btn btn-outline-primary btn-outline-primary-custom me-2" href="#">Log In</a><a
+                        class="btn btn-primary btn-primary-custom" href="#">Sign Up</a></div>
+            </div>
+        </nav>
+            <!-- header part ends-->
+
+            <!-- Slider section starts -->
+            <div>
+        <app-imageslider></app-imageslider>
+      </div>
+            <!-- Slider section ends -->
+
+            <!-- Card section starts -->
+
+            <div>
+                <app-coursesection></app-coursesection>
+            </div>
+
+            <!-- Card section ends -->
+
+            
+            <div>
+                <app-desccardone [alignment]="'left'"></app-desccardone>
+            </div>
+           
+
+            <div>
+                <app-desccardone [alignment]="'right'"></app-desccardone>
+            </div>
+
+            <!-- All course cards starts-->
+            <div>
+                <app-fieldcards></app-fieldcards>
+            </div>
+             <!-- All course cards ends-->
+
+             <div>
+                <app-blogcards></app-blogcards>
+
+             </div>
+
+             <div>
+                 <app-contactform></app-contactform>
+             </div>
+
+             <div>
+                <app-footersection></app-footersection>
+             </div>
+
+            <!-- <div class="mb-5 mb-lg-2 mx-auto text-center" style="max-width: 32rem;">
+                <div class="mb-5">
+                    <h2 class="mb-3 fs-1 fw-bold">
+                        <span>Accelerate your Career </span>
+                        <span>Growth & Upskill Yourself.</span>
+                    </h2>
+                    <p class="lead text-muted mb-0">World-Class Certification & Degree Programs.</p>
+                </div>
+                <div><a class="btn btn-primary me-2" href="#">Check Now</a><a class="btn btn-outline-primary"
+                        href="#">Courses</a></div>
+            </div> -->
+        </div>
+    
+</section>
