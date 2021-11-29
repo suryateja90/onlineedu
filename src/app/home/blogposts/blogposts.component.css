@@ -133,8 +133,10 @@
   }
   .blog .entry .entry-img {
     max-height: 440px;
-    margin: -30px -30px 20px -30px;
+    /* margin: -30px -30px 20px -30px; */
     overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
   }
   .blog .entry .entry-title {
     font-size: 28px;
@@ -535,4 +537,8 @@
     padding-left: 5px;
     color: #a5c5fe;
     font-size: 14px;
+  }
+
+  ::ng-deep .page-item.active .page-link .sr-only {
+    display: none;
   }

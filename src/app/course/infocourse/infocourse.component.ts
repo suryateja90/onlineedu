@@ -13,17 +13,18 @@ export class InfocourseComponent implements OnInit {
   constructor(private cds: CoursedataService) { }
 
   ngOnInit() {
-    this.keyhighlights = higlights.basic;
-    this.cds.tab_mode_source.subscribe((val : any) => {
-      if(val === 'Tab2') {
-        this.keyhighlights = higlights.standard;
-      }
-      if(val === 'Tab3') {
-        this.keyhighlights = higlights.Advanced;
-      } else if(val === 'Tab1') {
-        this.keyhighlights = higlights.basic
-      }
-    })
+    let val = this.cds.givesCourseObj(higlights, 111);
+    this.keyhighlights = val.highlights;
+    // this.cds.tab_mode_source.subscribe((val : any) => {
+    //   if(val === 'Tab2') {
+    //     this.keyhighlights = higlights.standard;
+    //   }
+    //   if(val === 'Tab3') {
+    //     this.keyhighlights = higlights.Advanced;
+    //   } else if(val === 'Tab1') {
+    //     this.keyhighlights = higlights.basic
+    //   }
+    // })
   }
 
 

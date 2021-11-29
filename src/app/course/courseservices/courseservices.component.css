@@ -1,0 +1,154 @@
+#master-career-services-section {
+    padding: 30px 0;
+    background-color: #f5f8fb;
+}
+
+#master-career-services-section h2 {
+    font-size: 30px;
+    line-height: 41px;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 30px
+}
+
+.master-career-services-tab-wrap {
+    overflow: auto;
+    width: 100%
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+#master-career-services-tab {
+    border: none;
+    margin-bottom: 30px;
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+#master-career-services-tab li a {
+    border: 1px solid #e0e0e0;
+    border-radius: 0;
+    margin-right: -1px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
+    min-width: 195px;
+    padding: 11px 15px;
+    display: block
+}
+
+#master-career-services-tab li:last-child a {
+    margin-right: 0
+}
+
+#master-career-services-tab li a.active {
+    background-color: #000000;
+    color: #fff
+}
+
+.master-career-services-tab-item {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 40px;
+    width: 100%
+}
+
+#master-career-services-tab-content .tab-pane .master-career-services-tab-item:last-child {
+    margin-bottom: 0
+}
+
+.master-career-services-tab-content {
+    position: relative;
+    width: 100%
+}
+
+.master-career-services-tab-content>span {
+    position: absolute;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    top: 2px;
+    right: 0;
+    padding-left: 20px;
+    color: #000
+}
+
+.master-career-services-tab-content>span:before {
+    position: absolute;
+    content: "";
+    /* background-image: url(../images/master-course-sprite.svg?tr=w-400,h-175-1); */
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 4px;
+    background-position: -368px -39px
+}
+
+.master-career-services-tab-img-wrap {
+    width: 60px;
+    min-width: 60px;
+    margin-right: 15px
+}
+
+.master-career-services-tab-img-wrap img {
+    width: 60px;
+    min-width: 60px
+}
+
+.master-career-services-tab-heading {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000;
+    padding-right: 218px
+}
+
+.master-career-services-tab-description {
+    font-size: 15px;
+    line-height: 26px;
+    color: #000;
+    margin-bottom: 0
+}
+
+@media screen and (max-width: 767px) {
+    #master-career-services-section {
+        padding:45px 0
+    }
+
+    #master-career-services-section h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 20px
+    }
+
+    .master-career-services-tab-heading {
+        padding-right: 0;
+        margin-bottom: 5px
+    }
+
+    .master-career-services-tab-content>span {
+        position: relative;
+        display: block;
+        margin-left: 0;
+        margin-bottom: 15px;
+        font-size: 13px
+    }
+
+    .master-career-services-tab-img-wrap {
+        width: 52px;
+        min-width: 52px
+    }
+
+    .master-career-services-tab-img-wrap img {
+        width: 52px;
+        min-width: 52px
+    }
+
+    .master-career-services-tab-description {
+        margin-left: -65px
+    }
+}

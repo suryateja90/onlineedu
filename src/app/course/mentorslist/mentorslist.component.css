@@ -45,6 +45,7 @@ section {
     background: #fff;
     border: 1px solid #eef0ef;
     border-top: 3px solid #1289ee;
+    width: 100%;
   }
   /* .trainers .member img {
     margin: -1px -1px 30px -1px;
@@ -98,5 +99,5 @@ section {
     line-height: 41px;
     color: #000;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 4rem;
   }

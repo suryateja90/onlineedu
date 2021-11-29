@@ -10,7 +10,7 @@
                     <div class="home-explore-course-tab-wrap">
 
                         <div class="nav flex-column nav-pills" id="explore-course-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link" *ngFor="let val of learnings; index as i" id="explore-course-tab-{{i}}" data-toggle="pill" href="#" role="tab" aria-controls="explore-course-{{i}}" aria-selected="false">
+                            <a class="nav-link" *ngFor="let val of learnings; index as i" id="explore-course-tab-{{i}}" data-toggle="pill" (click)="openCourse(val)" role="tab" aria-controls="explore-course-{{i}}" aria-selected="false">
                             {{val.name}} <i class="cat-nav-icon"></i>
                             </a>
                             </div>
@@ -25,22 +25,22 @@
                             <div class="row">
                                 <div class="col-lg-4 col-md-6" *ngFor="let item of courses">
                                 <div class="home-explore-course-card-wrap home-explore-course-card-hover">
-                                <a href="https://intellipaat.com/advanced-certification-data-science-artificial-intelligence-iit-madras/" class="home-explore-course-card">
-                                <img src="https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg" alt="intellipaat" class="img-fluid lazyloaded" data-ll-status="loaded"><noscript><img src="https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg" alt="intellipaat" class="img-fluid" /></noscript>
+                                <a class="home-explore-course-card">
+                                <img src="{{item.course_pic}}" alt="intellipaat" class="img-fluid lazyloaded" data-ll-status="loaded"><noscript><img src="{{item.course_pic}}" alt="intellipaat" class="img-fluid" /></noscript>
                                 </a>
                                 <div class="home-explore-course-card-content">
-                                <h4><a href="https://intellipaat.com/advanced-certification-data-science-artificial-intelligence-iit-madras/">{{item.name}}</a></h4>
+                                <h4><a>{{item.course_name}}</a></h4>
                                 <div class="home-explore-course-next-cohort">
-                                Next Cohort: <span>{{item.date}}</span>
+                                Next Cohort: <span>{{item.next_cohort}}</span>
                                 </div>
                                 <div class="home-explore-course-months">
                                 <i class="home-calendar-icon"></i>
                                 {{item.duration}} </div>
                                 <div class="home-explore-course-collaboration-image">
-                                <img src="https://intellipaat.com/course-image/2021/06/IIT-Madras.png" class="img-fluid lazyloaded" alt="intellipaat" data-ll-status="loaded"><noscript><img src="https://intellipaat.com/course-image/2021/06/IIT-Madras.png" class="img-fluid" alt="intellipaat" /></noscript>
+                                <img src="{{item.course_pic}}" class="img-fluid lazyloaded" alt="intellipaat" data-ll-status="loaded"><noscript><img src="{{item.course_pic}}" class="img-fluid" alt="intellipaat" /></noscript>
                                 </div>
                                 <div class="home-explore-course-card-btn">
-                                <a href="https://intellipaat.com/advanced-certification-data-science-artificial-intelligence-iit-madras/" class="home-explore-course-knwmore-btn">Know More</a>
+                                <a href="" class="home-explore-course-knwmore-btn">Know More</a>
                                 </div>
                                 </div>
                                 </div>

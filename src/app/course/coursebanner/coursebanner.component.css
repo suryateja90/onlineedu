@@ -134,3 +134,123 @@ label {
     background-color: #d3d3dd;
     color: white;
 }
+
+.nav-link {
+    color: rgb(110, 110, 110);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.nav-link:hover {
+    color: #55c57a
+}
+
+.nav-pills .nav-link.active {
+    color: black;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    font-weight: 600
+}
+
+ul {
+    list-style: none;
+    margin-top: 1rem;
+    padding-inline-start: 0
+}
+
+a.active {
+    border-bottom: 2px solid #55c57a
+}
+
+
+#master-second-nav {
+    background: #fff;
+    box-shadow: 0 4px 8px rgb(0 0 0/8%);
+    position: relative
+}
+
+#master-second-nav.master-nav-scroll-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    transition: all .5s
+}
+
+#master-nav-wrapper {
+    overflow: auto
+}
+
+#master-nav-wrapper::-webkit-scrollbar {
+    display: none
+}
+
+.master-nav-scroll-fixed #master-nav-wrapper {
+    overflow: auto;
+    width: 100%;
+    float: left;
+    display: flex
+}
+
+#master-nav-list {
+    white-space: nowrap;
+    display: flex;
+    width: 100%;
+}
+
+#master-nav-list li {
+    text-align: center;
+    display: inline-block
+}
+
+#master-nav-list li:last-child {
+    margin-left: auto
+}
+
+#master-nav-list li.active {
+    color: #6659b8!important;
+    border-bottom: 3px solid #6659b8;
+    font-weight: 600;
+    border-radius: 0;
+    text-decoration: none
+}
+
+#master-nav-list li a {
+    padding: 18px 20px;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 16px;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: .3px
+}
+
+#master-nav-list li.active a {
+    color: #6659b8
+}
+
+#master-nav-list li:hover {
+    color: #6659b8;
+    border-bottom: 3px solid #6659b8
+}
+
+#master-nav-list li:last-child:hover {
+    border-bottom: none
+}
+
+#master-nav-list li:hover a {
+    color: #6659b8
+}
+
+#master-nav-list li a.master-nav-enroll-btn {
+    background: linear-gradient(270deg,#ff630b 0,#ff7a00 100%);
+    padding: 12px 20px!important;
+    margin: 7px 0;
+    color: #fff!important;
+    border-radius: 2px;
+    width: 140px;
+    box-shadow: 0 2px 16px rgba(0,0,0,.12)
+}

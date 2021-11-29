@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeinfoComponent } from './homeinfo/homeinfo.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { BlogpostpageComponent } from './blogpostpage/blogpostpage.component';
+import { GenericPaginationComponent } from './generic-pagination/generic-pagination.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
       path: 'blogpostpage',
       component: BlogpostpageComponent
+  }, 
+  {
+    path: 'pagin',
+    component: GenericPaginationComponent
   }
 ];
 

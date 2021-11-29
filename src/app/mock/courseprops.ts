@@ -1,149 +1,303 @@
-export const courseProps = [{
-    name: 'Advanced Certification in Data Science and AI', date: '7th Nov 2021', duration: '7 months',
-    institute: 'IIT Madras'
-}, {
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
-}, {
-    name: 'We Development', date: '20th Dec 2021', duration: '3 months',
-    institute: 'NIT warangal'
+export const courseProps = [
+  {
+      "course_id": 111,
+      "course_name": "java",
+      "course_pic": "https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg",
+      "category": "development",
+      "sub_category": "programming",
+      "about_course": "Java is a programming language",
+      "next_cohort": "21 Nov 2021",
+      "duration": "7months",
+      "fees": "$400"
+  },
+  {
+    "course_id": 112,
+    "course_name": "BI & Databases",
+    "course_pic": "https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg",
+    "category": "development",
+    "sub_category": "programming",
+    "about_course": "Java is a programming language",
+    "next_cohort": "21 Nov 2021",
+    "duration": "7months",
+    "fees": "$400"
 },
 {
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
+    "course_id": 113,
+    "course_name": "Machine learning",
+    "course_pic": "https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg",
+    "category": "development",
+    "sub_category": "programming",
+    "about_course": "Java is a programming language",
+    "next_cohort": "21 Nov 2021",
+    "duration": "7months",
+    "fees": "$400"
 },
 {
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
-},
-{
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
-},
-{
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
-},
-{
-    name: 'Machine learning', date: '7th Nov 2021', duration: '7 months',
-    institute: 'JNTU Hyd'
-}];
+    "course_id": 114,
+    "course_name": "Robotics",
+    "course_pic": "https://intellipaat.com/course-image/2021/06/IIT-MadrasThumbnail.jpg",
+    "category": "development",
+    "sub_category": "programming",
+    "about_course": "Java is a programming language",
+    "next_cohort": "21 Nov 2021",
+    "duration": "7months",
+    "fees": "$400"
+}
+]
 
 export const learnings = [{ name: 'Popular Courses' }, { name: 'Data Science & Business Analytics' }, { name: 'Cloud Computing' }, { name: 'BI & Databases' },
 { name: 'Cyber Security' }, { name: 'Degree programs' }, { name: 'Testing' }, { name: 'Management' }];
 
 
-export const higlights = {basic: [{
-    features: 'basic 400 Hrs of Applied Learning'
-  }, {
-    features: '218 Hrs of Self-Paced Learning'
-  }, {
-    features: 'Capstone Project in 4 Domains'
-  }, {
-    features: '50+ Industry Projects & Case Studies'
-  }, {
-    features: '24*7 Support'
+export const higlights = [
+  {
+      "course_id": 111,
+      "highlights": [
+          "400 Hrs of Applied Learning",
+          "50+ Live sessions across 7 months",
+          "218 Hrs of Self-Paced Learning",
+          "Learn from IIT Madras Faculty & Industry Practitioners",
+          "50+ Industry Projects & Case Studies",
+          "One-on-One with Industry Mentors",
+          "Career Services by Intellipaat",
+          "3 Guaranteed Interviews by Intellipaat"
+      ]
   },
   {
-    features: 'Learn from IIT Madras Faculty & Industry Practitioners'
+      "course_id": 112,
+      "highlights": [
+          "400 Hrs of Applied Learning",
+          "50+ Live sessions across 7 months",
+          "218 Hrs of Self-Paced Learning",
+          "Learn from IIT Madras Faculty & Industry Practitioners",
+          "50+ Industry Projects & Case Studies",
+          "One-on-One with Industry Mentors",
+          "Career Services by Intellipaat",
+          "3 Guaranteed Interviews by Intellipaat"
+      ]
   },
   {
-    features: '30+ Hands-On Projects and Integrated Labs'
-  },
-  {
-    features: '3 Guaranteed Interviews by Intellipaat'
-  }, {
-    features: 'Soft Skills Essential Training'
-  }],
-  standard: [{
-    features: 'standard 400 Hrs of Applied Learning'
-  }, {
-    features: '218 Hrs of Self-Paced Learning'
-  }, {
-    features: 'Capstone Project in 4 Domains'
-  }, {
-    features: '50+ Industry Projects & Case Studies'
-  }, {
-    features: '24*7 Support'
-  },
-  {
-    features: 'Learn from IIT Madras Faculty & Industry Practitioners'
-  },
-  {
-    features: '30+ Hands-On Projects and Integrated Labs'
-  },
-  {
-    features: '3 Guaranteed Interviews by Intellipaat'
-  }, {
-    features: 'Soft Skills Essential Training'
-  }],
-  Advanced: [{
-    features: 'Advanced 400 Hrs of Applied Learning'
-  }, {
-    features: '218 Hrs of Self-Paced Learning'
-  }, {
-    features: 'Capstone Project in 4 Domains'
-  }, {
-    features: '50+ Industry Projects & Case Studies'
-  }, {
-    features: '24*7 Support'
-  },
-  {
-    features: 'Learn from IIT Madras Faculty & Industry Practitioners'
-  },
-  {
-    features: '30+ Hands-On Projects and Integrated Labs'
-  },
-  {
-    features: '3 Guaranteed Interviews by Intellipaat'
-  }, {
-    features: 'Soft Skills Essential Training'
-  }]};
+      "course_id": 113,
+      "highlights": [
+          "400 Hrs of Applied Learning",
+          "50+ Live sessions across 7 months",
+          "218 Hrs of Self-Paced Learning",
+          "Learn from IIT Madras Faculty & Industry Practitioners",
+          "50+ Industry Projects & Case Studies",
+          "One-on-One with Industry Mentors",
+          "Career Services by Intellipaat",
+          "3 Guaranteed Interviews by Intellipaat"
+      ]
+  }
+];
 
 
-  export const basicCourseContent = [ 
-    {title: 'Machine learning', content: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiafdgdfgdfgdfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfgdfg dfggggg."},
-    {title: 'Data Science', content: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiafdgdfgdfgdfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfgdfg dfggggg."},
-    {title: 'Web development', content: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiafdgdfgdfgdfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfgdfg dfggggg."},
-    {title: 'Robotics', content: "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officiafdgdfgdfgdfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfg dfgdfgdfgdfg dfggggg."}
-  ];
+  export const basicCourseContent = {
+    "course_contents": [
+        {
+            "course_id": 111,
+            "course_topics": [
+                {
+                    "module": "Introduction",
+                    "sessions": 12,
+                    "topics": [
+                        "How to Find a Hungry-to-Buy Audience with 3 Simple Questions",
+                        "How to Get Responses to Your Survey",
+                        "How to Analyse Your Survey Results"
+                    ]
+                },
+                {
+                    "module": "Market Research",
+                    "sessions": 15,
+                    "topics": [
+                        "How to Find a Hungry-to-Buy Audience with 3 Simple Questions",
+                        "How to Get Responses to Your Survey",
+                        "How to Analyse Your Survey Results"
+                    ]
+                }
+            ]
+        }
+    ]
+} 
 
   export const blogDetails = {
     "blogs": [
         {
             "id": 1233,
             "industry": "E-commerce",
-            "subject": "Android app now for cardholders, too",
-            "header_image": "image123.png",
+            "subject": "Dolorum optio tempore voluptas dignissimos cumque fuga qui quibusdam quia",
+            "header_image": "/assets/images/blog-2.jpg",
             "content_writer": "Tara",
             "topics": [
                 {
-                    "heading": "heading1",
-                    "image": "image1.png",
+                    "heading": "yghhv jjgjhj jghgyg ghgg yyy hjgjygifkyftv yvkjtd kfchgv",
+                    "image": "assets/images/blog-3.jpg",
                     "paras": [
                         {
-                            "para": "aaaaaaaaaaaaaaaaa",
+                            "para": "Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.",
                             "blank_line": "yes"
+                        },
+                        {
+                          "para": "Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.",
+                          "blank_line": "yes"
+                        },
+                        {
+                          "para": "What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.",
+                          "blank_line": "yes"
                         }
                     ],
                     "blank_line": "yes"
                 },
-                {
-                    "heading": "heading2",
-                    "image": "image2.png",
-                    "paras": [
-                        {
-                            "para": "bbbbbbbbbbbbbbbbbbb",
-                            "blank_line": "yes"
-                        },
-                        {
-                            "para": "fffffffffffbbbbbbb",
-                            "blank_line": "no"
-                        }
-                    ],
-                    "blank_line": "yes"
-                }
             ]
-        }
+        },
+        {
+          "id": 1234,
+          "industry": "Business Tips",
+          "subject": "What the founder of Celle Skin learned from launching into the US",
+          "header_image": "assets/images/blog-3.jpg",
+          "content_writer": "Charles",
+          "topics": [
+              {
+                  "heading": "A red-hot business idea",
+                  "image": "assets/images/blog-2.jpg",
+                  "paras": [
+                      {
+                          "para": "When Vanessa originally pitched her hosiery range for curvy bodies, Sonsee Woman, on season one of Shark Tank Australia, business pioneer Naomi Simson knew she was onto something. So much so, Naomi invested AUD 80,000 for a 20% stake in the business.",
+                          "blank_line": "yes"
+                      }
+                  ],
+                  "blank_line": "yes"
+              },
+              {
+                  "heading": "dsfjndf sdfsdfunsd sdfdsfnsdf sdfsdjfsdkfj sdfnkjnsdf sdfsdf",
+                  "image": "assets/images/blog-2.jpg",
+                  "paras": [
+                      {
+                          "para": "bbbbbbbbbbbbbbbbbbb",
+                          "blank_line": "yes"
+                      },
+                      {
+                          "para": "fffffffffffbbbbbbb",
+                          "blank_line": "no"
+                      }
+                  ],
+                  "blank_line": "yes"
+              }
+          ]
+      },
+      {
+        "id": 1235,
+        "industry": "finance",
+        "subject": "What’s the best way to transfer money abroad from the UK?",
+        "header_image": "assets/images/blog-1.jpg",
+        "content_writer": "clint eastwill",
+        "topics": [
+            {
+                "heading": "How international bank transfers work ",
+                "image": "assets/images/blog-2.jpg",
+                "paras": [
+                    {
+                        "para": "You might be tempted to use a high street bank when making a global money transfer, simply because you’ve banked with them for years. But the Big 4 actually offer some of the least competitive rates on international transfers, with transaction fees of up to £25 per transfer, and exchange rates that can reach 3.5% above the interbank rate.",
+                        "blank_line": "yes"
+                    }
+                ],
+                "blank_line": "yes"
+            },
+            {
+                "heading": "dsfjndf sdfsdfunsd sdfdsfnsdf sdfsdjfsdkfj sdfnkjnsdf sdfsdf",
+                "image": "assets/images/blog-2.jpg",
+                "paras": [
+                    {
+                        "para": "bbbbbbbbbbbbbbbbbbb",
+                        "blank_line": "yes"
+                    },
+                    {
+                        "para": "fffffffffffbbbbbbb",
+                        "blank_line": "no"
+                    }
+                ],
+                "blank_line": "yes"
+            }
+        ]
+    }
     ]
 }
+
+export const courseEligibility = {
+  "candidate_eligibilities": [
+      {
+          "course_id": 111,
+          "eligibilities": [
+              "Individuals with a bachelor’s degree and a keen interest to learn AI and Data Science",
+              "IT professionals looking for a career transition as Data Scientists and Artificial Intelligence Engineers",
+              "Professionals aiming to move ahead in their IT career"
+          ]
+      }
+  ]
+}
+
+export const jobRoles = {
+  "job_roles": [
+      {
+          "course_id": 111,
+          "roles": [
+              {
+                  "role": "Security Analyst",
+                  "responsibilities": [
+                      "Understand the issues and create models based on the data gathered, and also manage a team of Data Scientists.",
+                      "Build strategies on frameworks and technologies to develop AI solutions and help the organization prosper."
+                  ]
+              }
+          ]
+      }
+  ]
+}
+
+export const courses = {
+  "courses": [
+      {
+          "course_id": 111,
+          "course_name": "java",
+          "course_pic": "abc.png",
+          "category": "development",
+          "sub_category": "programming",
+          "about_course": "Java is a programming language",
+          "next_cohort": "21 Nov 2021",
+          "duration": "7months",
+          "fees": "$400"
+      }
+  ]
+}
+
+export const courseServices = [
+    {
+        "course_id": 111,
+        "job_procedures": [
+            {
+                "procedure_type": "Job Assistance",
+                "procedure_start_at": "middle of the course",
+                "procedures": [
+                    "Guaranteed 3 job interviews upon submission of projects and assignments. Get interviewed by our 400+ hiring partners.",
+                    "Exclusive access to our dedicated job portal and apply for jobs. More than 400 hiring partners’ including top start-ups and product companies hiring our learners. Mentored support on job search and relevant jobs for your career growth."
+                ] 
+            },
+            {
+                "procedure_type": "Interview Preperation",
+                "procedure_start_at": "middle of the course",
+                "procedures": [
+                    "Guaranteed 3 job interviews upon submission of projects and assignments. Get interviewed by our 400+ hiring partners.",
+                    "Exclusive access to our dedicated job portal and apply for jobs. More than 400 hiring partners’ including top start-ups and product companies hiring our learners. Mentored support on job search and relevant jobs for your career growth."
+                ] 
+            },
+
+            {
+                "procedure_type": "Profile building",
+                "procedure_start_at": "middle of the course",
+                "procedures": [
+                    "Guaranteed 3 job interviews upon submission of projects and assignments. Get interviewed by our 400+ hiring partners.",
+                    "Exclusive access to our dedicated job portal and apply for jobs. More than 400 hiring partners’ including top start-ups and product companies hiring our learners. Mentored support on job search and relevant jobs for your career growth."
+                ] 
+            }
+        ]
+    }
+]

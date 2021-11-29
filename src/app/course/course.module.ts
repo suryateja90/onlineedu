@@ -8,11 +8,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CoursedetailsComponent } from './coursedetails/coursedetails.component';
 import { CourseinfolayoutComponent } from './courseinfolayout/courseinfolayout.component';
 import { CoursebannerComponent } from './coursebanner/coursebanner.component';
+import { CourseservicesComponent } from './courseservices/courseservices.component';
 
 
 
 @NgModule({
-  declarations: [InfocourseComponent, CourserequirementsComponent, MentorslistComponent, CoursedetailsComponent, CourseinfolayoutComponent, CoursebannerComponent],
+  declarations: [InfocourseComponent, CourserequirementsComponent, MentorslistComponent, CoursedetailsComponent, CourseinfolayoutComponent, CoursebannerComponent, CourseservicesComponent],
   imports: [
     CommonModule,
     CourseRoutingModule, NgbModule

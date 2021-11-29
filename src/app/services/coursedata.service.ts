@@ -11,6 +11,7 @@ export class CoursedataService {
   course
   tab_mode_source = new BehaviorSubject([]);
   tab_mode = this.tab_mode_source.asObservable();
+  blogData: any;
 
   constructor() { }
 
@@ -28,4 +29,18 @@ export class CoursedataService {
   setTabMode(draft_mode) {
     this.tab_mode_source.next(draft_mode);
 }
+
+  setBlogData(b) {
+    this.blogData = b;
+  }
+
+  getBlogData() {
+    return this.blogData;
+  }
+
+  givesCourseObj(arr, courseId) {
+    return arr.filter((v) => {
+      return v.course_id === courseId;
+    })[0];
+  }
 }

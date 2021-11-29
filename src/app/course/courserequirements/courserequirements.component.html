@@ -5,12 +5,7 @@
     <div class="row align-items-center">
     <div class="col-lg-8 who-can-apply-content">
     <ul>
-    <li style="font-weight: 400;" aria-level="1"><strong>Individuals with a bachelor’s degree and a keen interest to learn AI and Data Science</strong></li>
-    <li style="font-weight: 400;" aria-level="1"><strong>IT professionals looking for a career transition as Data Scientists and Artificial Intelligence Engineers</strong></li>
-    <li style="font-weight: 400;" aria-level="1"><strong>Professionals aiming to move ahead in their IT career</strong></li>
-    <li style="font-weight: 400;" aria-level="1"><strong>Artificial Intelligence and Business Intelligence professionals</strong></li>
-    <li style="font-weight: 400;" aria-level="1"><strong>Developers and Project Managers</strong></li>
-    <li style="font-weight: 400;" aria-level="1"><strong>Freshers who aspire to build their career in the field of Artificial Intelligence and Data Science</strong></li>
+    <li style="font-weight: 400;" aria-level="1" *ngFor="let e of eligibilities.eligibilities"><strong>{{e}}</strong></li>
     </ul>
     </div>
     <div class="col-lg-4 d-none d-lg-block">
@@ -18,56 +13,21 @@
     </div>
     </div>
     </div>
-    <h2>What roles can a <b>Data Science &amp; Artificial Intelligence</b> play?</h2>
+    <h2>What roles can a <b>{{course.course_name}}</b> play?</h2>
     <div class="what-role-section">
     <div class="what-role-first-section">
     <div class="row">
-    <div class="col-lg-4 col-md-6 vk-role-list">
+    <div class="col-lg-4 col-md-6 vk-role-list" *ngFor="let j of jobs.roles">
     <div class="what-role-first-list">
-    <h3>Senior Data Scientist</h3>
-    <p class="m-0"></p><p>Understand the issues and create models based on the data gathered, and also manage a team of Data Scientists.</p>
-    <p></p>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 vk-role-list">
-    <div class="what-role-first-list">
-    <h3>AI Expert</h3>
-    <p class="m-0"></p><p>Build strategies on frameworks and technologies to develop AI solutions and help the organization prosper.</p>
-    <p></p>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 vk-role-list">
-    <div class="what-role-first-list">
-    <h3>Machine Learning Expert</h3>
-    <p class="m-0"></p><p>With the help of several Machine Learning tools and technologies, build statistical models with huge chunks of business data.</p>
-    <p></p>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 vk-role-list">
-    <div class="what-role-first-list">
-    <h3>Applied Scientist</h3>
-    <p class="m-0"></p><p>Design and build Machine Learning models to derive intelligence for the numerous services and products offered by the organization.</p>
-    <p></p>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 vk-role-list">
-    <div class="what-role-first-list">
-    <h3>Big Data Specialist</h3>
-    <p class="m-0"></p><p>Create and manage pluggable service-based frameworks that are customized in order to import, cleanse, transform, and validate data.</p>
-    <p></p>
-    </div>
-    </div>
-    <div class="col-lg-4 col-md-6 vk-role-list">
-    <div class="what-role-first-list">
-    <h3>Senior Business Analyst</h3>
-    <p class="m-0"></p><p>Extract data from the respective sources to perform business analysis, and generate reports, dashboards, and metrics to monitor the company’s performance.</p>
+    <h3>{{j.role}}</h3>
+    <p class="m-0"></p><p>{{j.responsibilities}}</p>
     <p></p>
     </div>
     </div>
     </div>
-    <div class="mob-view-more-btn vk-mob-view-add mb-2 d-none">View More</div>
+    <!-- <div class="mob-view-more-btn vk-mob-view-add mb-2 d-none">View More</div> -->
     </div>
-    <div class="what-role-skill-to-master-section">
+    <!-- <div class="what-role-skill-to-master-section">
     <h3>Skills to Master</h3>
     <div class="what-role-skill-to-master-wrapper row what-role-skill-to-master-max-height">
     <div class="what-role-skill-to-master-items items1 col-md-4 col-sm-6">
@@ -117,7 +77,7 @@
     </div>
     </div>
     <div class="mob-view-more-btn mb-2">View More</div>
-    </div>
+    </div> -->
     
     </div>
     </div>

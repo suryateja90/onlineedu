@@ -1,3 +1,36 @@
 .card.disabled {
     opacity: 0.5;
   }
+
+  .contentbody {
+    border-top: 1px solid #e0e0e0;
+    font-size: 14px;
+    line-height: 30px;
+    color: #000;
+    padding: 20px 20px 20px 60px;
+    position: relative;
+    flex: 1 1 auto;
+  }
+
+  .contentbody ul {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: #000;
+    padding-left: 1.25rem;
+}
+
+.contentbody ul li {
+  font-size: 14px;
+  line-height: 30px;
+  list-style-type: disc;
+  list-style-position: inside;
+  color: #000;
+}
+
+#curriculum-section {
+  padding: 60px 0 120px;
+  background-color: #f5f8fb;
+}

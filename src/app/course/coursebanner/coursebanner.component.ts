@@ -14,7 +14,6 @@ export class CoursebannerComponent implements OnInit {
   constructor(private cds: CoursedataService) { }
 
   ngOnInit() {
-    this.keyhighlights = higlights.basic;
   }
 
   tabs = [{title: 'Tab1'}, {title: 'Tab2'}, {title: 'Tab3'}]

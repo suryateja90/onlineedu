@@ -14,11 +14,12 @@ import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { BlogpostpageComponent } from './blogpostpage/blogpostpage.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { BlogcardsComponent } from './blogcards/blogcards.component';
+import { GenericPaginationComponent } from './generic-pagination/generic-pagination.component';
 
 
 
 @NgModule({
-  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent],
+  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent, GenericPaginationComponent],
   imports: [
     CommonModule,
     NgbModule,

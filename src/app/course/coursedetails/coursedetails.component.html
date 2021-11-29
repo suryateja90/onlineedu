@@ -1,5 +1,11 @@
+<div data-spy="scroll" data-target="#master-nav-wrapper" data-offset="50">
+<section id="curriculum-section" >
 <div class="container">
-<h2>Course Content</h2>
+    <div class="row align-items-center">
+        <div class="col-lg-8">
+            <h2 class="mb-5"><b>Course Content</b></h2>
+            </div>
+            </div>
 
 <div class="card text-center">
     <div class="card-header">
@@ -9,26 +15,37 @@
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-3">
-                <span>14 lectures </span>
+                <span>{{sessionsPeriod}} sessions  </span>
                 <span>42 mins</span>
             </div>
         </div>
     </div>
     <div class="card-body">
             <ngb-accordion>
-            <ngb-panel [disabled]="disabled" [cardClass]="accordion-item" *ngFor="let val of courseList">
+            <ngb-panel [disabled]="disabled" [cardClass]="accordion-item" *ngFor="let val of courseList.course_topics">
                 <ng-template ngbPanelHeader>
                     <h2>
-                        <button type="button" class="accordion-button collapsed" ngbPanelToggle>{{val.title}}</button>									
+                        <button type="button" class="accordion-button collapsed" ngbPanelToggle>{{val.module}}</button>							
                     </h2>
                 </ng-template>
                 <ng-template ngbPanelContent>
-                    <p>{{val.content}}</p>
+                  <ul>
+                      <li *ngFor="let top of val.topics" style="float: left; clear:both" class="mb-1">
+                        {{top}}
+                      </li>
+                  </ul>
+                    <!-- <div class="row">
+                        <div class="col-md-8">
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1" *ngFor="let top of val.topics"><span style="font-weight: 400;">{{top}}</span></li>
+                                </ul>            
+                        </div>
+                    </div> -->
                 </ng-template>
               </ngb-panel>
             </ngb-accordion>
-
-    
         </div>
 </div>
+</div>
+</section>
 </div>

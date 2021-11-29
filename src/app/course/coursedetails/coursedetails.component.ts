@@ -9,14 +9,17 @@ import { CoursedataService } from 'src/app/services/coursedata.service';
 })
 export class CoursedetailsComponent implements OnInit {
 
+  courseList;
   disabled = false;
+  content;
+  sessionsPeriod;
 
   constructor(private cds: CoursedataService) { }
 
   ngOnInit() {
+    this.courseList = this.cds.givesCourseObj(basicCourseContent.course_contents, 111)
+    this.sessionsPeriod = this.courseList.course_topics.reduce((n, {sessions}) => n + sessions, 0)
     
   }
-
-  courseList = basicCourseContent;
 
 }
