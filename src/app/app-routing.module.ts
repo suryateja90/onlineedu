@@ -12,6 +12,10 @@ const routes: Routes = [
     loadChildren: './course/course.module#CourseModule'
   },
   {
+    path: 'supportinfo',
+    loadChildren: './support/support.module#SupportModule'
+  },
+  {
     path: '',
     redirectTo: 'courseinfo',
     pathMatch: 'full'

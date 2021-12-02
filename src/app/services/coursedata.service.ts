@@ -43,4 +43,29 @@ export class CoursedataService {
       return v.course_id === courseId;
     })[0];
   }
+
+  givesSupportObj(arr, support_id) {
+    return arr.filter((v) => {
+      return v.support_id === support_id;
+    })[0];
+  }
+
+  arrayChunks(arr, chunkSize) {
+    const perChunk = chunkSize // items per chunk    
+
+    let inputArray = arr;
+    
+    const result = inputArray.reduce((resultArray, item, index) => { 
+      const chunkIndex = Math.floor(index/perChunk)
+    
+      if(!resultArray[chunkIndex]) {
+        resultArray[chunkIndex] = [] // start a new chunk
+      }
+    
+      resultArray[chunkIndex].push(item)
+    
+      return resultArray
+    }, [])
+    return result;
+  }
 }

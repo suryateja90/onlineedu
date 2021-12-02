@@ -18,6 +18,6 @@ import { CourseservicesComponent } from './courseservices/courseservices.compone
     CommonModule,
     CourseRoutingModule, NgbModule
   ],
-  exports: [CourserequirementsComponent]
+  exports: [CourserequirementsComponent, InfocourseComponent]
 })
 export class CourseModule { }

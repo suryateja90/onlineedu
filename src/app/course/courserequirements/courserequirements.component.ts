@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { courseEligibility, jobRoles, courses } from 'src/app/mock/courseprops';
 import { CoursedataService } from 'src/app/services/coursedata.service';
 
@@ -9,6 +9,7 @@ import { CoursedataService } from 'src/app/services/coursedata.service';
 })
 export class CourserequirementsComponent implements OnInit {
 
+  @Input() showRoles = true;
   eligibilities;
   jobs;
   course;

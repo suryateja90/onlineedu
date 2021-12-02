@@ -1,0 +1,128 @@
+
+  <!-- Pricing # -->
+  		<div class="pricing">
+  			<div class="container">
+                <div class="section-title">
+                    <h2>Pricing</h2>
+                    <p>Check Our Pricing List</p>
+                  </div>
+  				<div class="pricing-table table-responsive">
+  					<table class="table">
+  						<!-- Heading -->
+  						<thead>
+  							<tr>
+  								<th>&nbsp;</th>
+  								<th>
+  									Free
+  									<span class="ptable-star red">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+  									</span>
+  									<span class="ptable-price">$0.0</span>
+  								</th>
+  								<th class="highlight">
+  									Basic
+  									<span class="ptable-star green">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+  									</span>
+  									<span class="ptable-price">$99.0</span>
+  								</th>
+  								<th>
+  									Business
+  									<span class="ptable-star lblue">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <i class="bi bi-star"></i>
+  									</span>
+  									<span class="ptable-price">$149.0</span>
+  								</th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr>
+  								<td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Storage</span></td>
+  								<td *ngFor="let x of Object.keys(priceList.storage)">
+  									<div *ngIf ="x == 'free'">
+                                        <i class="fa fa-hdd-o red"></i>
+                                        {{priceList.storage[x]}}
+                                      </div>
+                                      <div *ngIf="x == 'basic'">
+                                        <i class="fa fa-hdd-o green"></i>
+                                        {{priceList.storage[x]}}
+                                      </div>
+                                      <div *ngIf="x == 'standard'">
+                                        <i class="fa fa-hdd-o lblue"></i>
+                                        {{priceList.storage[x]}}
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Bandwidth</span></td>
+                                <td *ngFor="let x of Object.keys(priceList.bandwidth)">
+                                    <div *ngIf ="x == 'free'">
+                                      <i class="fa fa-hdd-o red"></i>
+                                      {{priceList.bandwidth[x]}}
+                                    </div>
+                                    <div *ngIf="x == 'basic'">
+                                      <i class="fa fa-hdd-o green"></i>
+                                      {{priceList.bandwidth[x]}}
+                                    </div>
+                                    <div *ngIf="x == 'standard'">
+                                      <i class="fa fa-hdd-o lblue"></i>
+                                      {{priceList.bandwidth[x]}}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Securty</span></td>
+                                <td *ngFor="let x of Object.keys(priceList.securty)">
+                                    <div *ngIf ="x == 'free'">
+                                      <i class="fa fa-hdd-o red"></i>
+                                      {{priceList.securty[x]}}
+                                    </div>
+                                    <div *ngIf="x == 'basic'">
+                                      <i class="fa fa-hdd-o green"></i>
+                                      {{priceList.securty[x]}}
+                                    </div>
+                                    <div *ngIf="x == 'standard'">
+                                      <i class="fa fa-hdd-o lblue"></i>
+                                      {{priceList.securty[x]}}
+                                    </div>
+                                </td>
+                            </tr>
+  							<tr>
+  								<td><span class="ptable-title"><i class="fa fa-headphones"></i> Support</span></td>
+  								<td>
+  									<i class="fa fa-times red"></i>
+  									No Support
+  								</td>
+  								<td>
+  									<i class="fa fa-phone green"></i>
+  									Phone
+  								</td>
+  								<td>
+  									<i class="fa fa-envelope-o lblue"></i>
+  									E-mail / Phone
+  								</td>
+  							</tr>
+  							<!-- Buttons -->
+  							<tr>
+  								<td>&nbsp;</td>
+  								<td class="bg-red"><a class="btn" href="#">Sign Up</a></td>
+  								<td class="bg-green"><a class="btn" href="#">Sign Up</a></td>
+  								<td class="bg-lblue"><a class="btn" href="#">Sign Up</a></td>
+  							</tr>
+  						</tbody>
+  					</table>
+  				</div>
+  			</div>
+  		</div>

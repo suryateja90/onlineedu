@@ -13,8 +13,8 @@
     </div>
     </div>
     </div>
-    <h2>What roles can a <b>{{course.course_name}}</b> play?</h2>
-    <div class="what-role-section">
+    <h2 *ngIf="showRoles">What roles can a <b>{{course.course_name}}</b> play?</h2>
+    <div class="what-role-section" *ngIf="showRoles">
     <div class="what-role-first-section">
     <div class="row">
     <div class="col-lg-4 col-md-6 vk-role-list" *ngFor="let j of jobs.roles">
@@ -25,60 +25,7 @@
     </div>
     </div>
     </div>
-    <!-- <div class="mob-view-more-btn vk-mob-view-add mb-2 d-none">View More</div> -->
-    </div>
-    <!-- <div class="what-role-skill-to-master-section">
-    <h3>Skills to Master</h3>
-    <div class="what-role-skill-to-master-wrapper row what-role-skill-to-master-max-height">
-    <div class="what-role-skill-to-master-items items1 col-md-4 col-sm-6">
-    <p class="m-0">Python</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">Data Science</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">Data Analysis</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">AI</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">GIT</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">MLOps</p>
-    </div>
-    <div class="what-role-skill-to-master-items items3 col-md-4 col-sm-6">
-    <p class="m-0">Data Wrangling</p>
-    </div>
-    <div class="what-role-skill-to-master-items items4 col-md-4 col-sm-6">
-    <p class="m-0">SQL</p>
-    </div>
-    <div class="what-role-skill-to-master-items items5 col-md-4 col-sm-6">
-    <p class="m-0">Story Telling</p>
-    </div>
-    <div class="what-role-skill-to-master-items items1 col-md-4 col-sm-6">
-    <p class="m-0">Machine Learning</p>
-    </div>
-    <div class="what-role-skill-to-master-items items2 col-md-4 col-sm-6">
-    <p class="m-0">Prediction algorithms</p>
-    </div>
-    <div class="what-role-skill-to-master-items items4 col-md-4 col-sm-6">
-    <p class="m-0">NLP</p>
-    </div>
-    <div class="what-role-skill-to-master-items items5 col-md-4 col-sm-6">
-    <p class="m-0">PySpark</p>
-    </div>
-    <div class="what-role-skill-to-master-items items4 col-md-4 col-sm-6">
-    <p class="m-0">Model</p>
-    </div>
-    <div class="what-role-skill-to-master-items items4 col-md-4 col-sm-6">
-    <p class="m-0">Data visualization</p>
-    </div>
-    </div>
-    <div class="mob-view-more-btn mb-2">View More</div>
-    </div> -->
-    
+    </div>   
     </div>
     </div>
     </section>
