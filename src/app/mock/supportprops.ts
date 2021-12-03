@@ -160,3 +160,45 @@ export const reviews = {
         }
     ]
 }
+
+export const prices = {
+    "supports": [
+        {
+            "id": 114,
+            "category": "backend",
+            "course_name": "Python",
+            "about_support": "tech support",
+            "rating":4.5,
+            "services": [
+                {
+                    "service_name": "one time",
+                    "features": [
+                        "one time task support",
+                        "one time task guidelines"
+                    ],
+                    "price": 123.55
+                },
+                {
+                    "service_name": "static",
+                    "features": [
+                        "limited support",
+                        "limited guidelines"
+                    ],
+                    "price": 1234.55
+                },
+                {
+                    "service_name": "dynamic",
+                    "features": [
+                        "multiple times support",
+                        "multiple times guidelines"
+                    ],
+                    "price": 1534.55
+                }
+            ],
+
+            "eligibility": [
+                
+            ]
+        }
+    ]
+}

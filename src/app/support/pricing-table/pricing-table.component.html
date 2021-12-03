@@ -11,94 +11,71 @@
   						<!-- Heading -->
   						<thead>
   							<tr>
-  								<th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                  <th>
+  									Course
+                  </th>
   								<th>
-  									Free
-  									<span class="ptable-star red">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <i class="bi bi-star"></i>
-  									</span>
-  									<span class="ptable-price">$0.0</span>
-  								</th>
-  								<th class="highlight">
-  									Basic
-  									<span class="ptable-star green">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <i class="bi bi-star"></i>
-  									</span>
-  									<span class="ptable-price">$99.0</span>
-  								</th>
-  								<th>
-  									Business
-  									<span class="ptable-star lblue">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <i class="bi bi-star"></i>
-  									</span>
-  									<span class="ptable-price">$149.0</span>
-  								</th>
+  									Features
+                  </th>
+                  <th>
+  									Price
+                  </th>
   							</tr>
   						</thead>
   						<tbody>
   							<tr>
-  								<td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Storage</span></td>
-  								<td *ngFor="let x of Object.keys(priceList.storage)">
-  									<div *ngIf ="x == 'free'">
+  								<td><span class="ptable-title"><i class="fa fa-hdd-o"></i> one time</span></td>
+  								<td *ngFor="let x of Object.keys(priceList['one time'])">
+                    <div *ngIf="x == 'course'">
+                      <i class="fa fa-hdd-o green"></i>
+                      {{priceList['one time'][x]}}
+                    </div>
+                          <div *ngIf ="x == 'features'">
                                         <i class="fa fa-hdd-o red"></i>
-                                        {{priceList.storage[x]}}
+                                        {{priceList['one time'][x]}}
                                       </div>
-                                      <div *ngIf="x == 'basic'">
+                                      <div *ngIf="x == 'price'">
                                         <i class="fa fa-hdd-o green"></i>
-                                        {{priceList.storage[x]}}
-                                      </div>
-                                      <div *ngIf="x == 'standard'">
-                                        <i class="fa fa-hdd-o lblue"></i>
-                                        {{priceList.storage[x]}}
+                                        ${{priceList['one time'][x]}}
                                       </div>
                                   </td>
                               </tr>
-                              <tr>
-                                <td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Bandwidth</span></td>
-                                <td *ngFor="let x of Object.keys(priceList.bandwidth)">
-                                    <div *ngIf ="x == 'free'">
-                                      <i class="fa fa-hdd-o red"></i>
-                                      {{priceList.bandwidth[x]}}
-                                    </div>
-                                    <div *ngIf="x == 'basic'">
-                                      <i class="fa fa-hdd-o green"></i>
-                                      {{priceList.bandwidth[x]}}
-                                    </div>
-                                    <div *ngIf="x == 'standard'">
-                                      <i class="fa fa-hdd-o lblue"></i>
-                                      {{priceList.bandwidth[x]}}
-                                    </div>
-                                </td>
+                            <tr>
+                                <td><span class="ptable-title"><i class="fa fa-hdd-o"></i>static</span></td>
+                                <td *ngFor="let x of Object.keys(priceList['static'])">
+                                  <div *ngIf="x == 'course'">
+                                    <i class="fa fa-hdd-o green"></i>
+                                    {{priceList['static'][x]}}
+                                  </div>
+                                  <div *ngIf ="x == 'features'">
+                                                      <i class="fa fa-hdd-o red"></i>
+                                                     {{priceList['static'][x]}}
+                                                    </div>
+                                                    <div *ngIf="x == 'price'">
+                                                      <i class="fa fa-hdd-o green"></i>
+                                                      ${{priceList['static'][x]}}
+                                                    </div>
+                                                    
+                                                </td>
                             </tr>
                             <tr>
-                                <td><span class="ptable-title"><i class="fa fa-hdd-o"></i> Securty</span></td>
-                                <td *ngFor="let x of Object.keys(priceList.securty)">
-                                    <div *ngIf ="x == 'free'">
-                                      <i class="fa fa-hdd-o red"></i>
-                                      {{priceList.securty[x]}}
-                                    </div>
-                                    <div *ngIf="x == 'basic'">
-                                      <i class="fa fa-hdd-o green"></i>
-                                      {{priceList.securty[x]}}
-                                    </div>
-                                    <div *ngIf="x == 'standard'">
-                                      <i class="fa fa-hdd-o lblue"></i>
-                                      {{priceList.securty[x]}}
-                                    </div>
-                                </td>
-                            </tr>
+                              <td><span class="ptable-title"><i class="fa fa-hdd-o"></i>Dynamic</span></td>
+                              <td *ngFor="let x of Object.keys(priceList['dynamic'])">
+                                <div *ngIf="x == 'course'">
+                                  <i class="fa fa-hdd-o green"></i>
+                                  {{priceList['dynamic'][x]}}
+                                </div>
+                                <div *ngIf ="x == 'features'">
+                                                    <i class="fa fa-hdd-o red"></i>
+                                                    {{priceList['dynamic'][x]}}
+                                                  </div>
+                                                  <div *ngIf="x == 'price'">
+                                                    <i class="fa fa-hdd-o green"></i>
+                                                    ${{priceList['dynamic'][x]}}
+                                                  </div>
+                                              </td>
+                          </tr>
   							<tr>
   								<td><span class="ptable-title"><i class="fa fa-headphones"></i> Support</span></td>
   								<td>
@@ -116,10 +93,26 @@
   							</tr>
   							<!-- Buttons -->
   							<tr>
-  								<td>&nbsp;</td>
-  								<td class="bg-red"><a class="btn" href="#">Sign Up</a></td>
+                  <td>&nbsp;</td>
+                  <td>
+                    <div class="btn-wrap">
+                      <a  class="btn-buy">Sign up</a>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="btn-wrap">
+                      <a  class="btn-buy">Sign up</a>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="btn-wrap">
+                      <a  class="btn-buy">Sign up</a>
+                    </div>
+                  </td>
+  								<!-- <td class="bg-red"><a class="btn" href="#">Sign Up</a></td>
   								<td class="bg-green"><a class="btn" href="#">Sign Up</a></td>
-  								<td class="bg-lblue"><a class="btn" href="#">Sign Up</a></td>
+  								<td class="bg-lblue"><a class="btn" href="#">Sign Up</a></td> -->
   							</tr>
   						</tbody>
   					</table>
