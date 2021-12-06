@@ -130,7 +130,7 @@ export const higlights = [
             "content_writer": "Tara",
             "topics": [
                 {
-                    "heading": "yghhv jjgjhj jghgyg ghgg yyy hjgjygifkyftv yvkjtd kfchgv",
+                    "heading": "Course that benfitting you in career growth",
                     "image": "assets/images/blog-3.jpg",
                     "paras": [
                         {
@@ -299,5 +299,35 @@ export const courseServices = [
                 ] 
             }
         ]
+    }
+]
+
+export const testimonials = [
+    {
+        "name": "Johnson",
+        "profile_pic": "/assets/images/t1.jpg",
+        "location": "Singapore",
+        "rating": 3.5,
+        "comments": "Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.",
+        "feedback_video": "link123",
+        "linkedin_profile": "https://linkedin.com/abc"
+    },
+    {
+        "name": "PAULA WILSON",
+        "profile_pic": "/assets/images/t2.jpg",
+        "location": "Singapore",
+        "rating": 3.5,
+        "comments": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.",
+        "feedback_video": "link123",
+        "linkedin_profile": "https://linkedin.com/abc"
+    },
+    {
+        "name": "ANTONIO MORENO",
+        "profile_pic": "/assets/images/t3.jpg",
+        "location": "Singapore",
+        "rating": 3.5,
+        "comments": "Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.",
+        "feedback_video": "link123",
+        "linkedin_profile": "https://linkedin.com/abc"
     }
 ]

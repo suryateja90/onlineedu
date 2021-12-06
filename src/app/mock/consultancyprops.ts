@@ -141,6 +141,77 @@ export const consultancyData = {
                     ]
                 }
             ]
+        },
+        {
+            "id": 102,
+            "country": "China",
+            "location": "Beijing, Masyci",
+            "country_pic": "/assets/images/china.jpg",
+            "about_placements": [
+
+            ],
+            "services": [
+                "600 Hrs of Applied Learning",
+                "Soft Skills Essential Training",
+                "Soft Skills Essential Training"                
+            ],
+
+            "who_can_apply": [
+                "Data Science Professionals",
+                "Business Intelligence Professionals",
+                "Software Developers"
+            ],
+
+            "jobs": [
+                {
+                    "job_type": "fulltime",
+                    "job_title": "java developer",
+                    "package": "3 to 4 lakhs",
+                    "organization": "sk techno",
+                    "job_posting": "November-12-2021",
+                    "job_description": [
+
+                    ],
+                    "requirements": [
+
+                    ],
+                    "responsibilities": [
+
+                    ]
+                },
+                {
+                    "job_type": "fulltime",
+                    "job_title": "UI developer",
+                    "package": "3 to 4 lakhs",
+                    "organization": "sk techno",
+                    "job_posting": "November-12-2021",
+                    "job_description": [
+
+                    ],
+                    "requirements": [
+
+                    ],
+                    "responsibilities": [
+
+                    ]
+                },
+                {
+                    "job_type": "fulltime",
+                    "job_title": "Tester",
+                    "package": "3 to 4 lakhs",
+                    "organization": "sk techno",
+                    "job_posting": "November-12-2021",
+                    "job_description": [
+
+                    ],
+                    "requirements": [
+
+                    ],
+                    "responsibilities": [
+
+                    ]
+                }
+            ]
         }
     ]
 
@@ -238,17 +309,6 @@ export const roadMap = {
         },
         {
             "name": "rama rao",
-            "photo": "appu.png",
-            "role": "designer",
-            "social_media_links": [
-                {
-                    "network": "linkedin",
-                    "network_link": "https://linkedin.com/abc"
-                }
-            ]
-        },
-        {
-            "name": "raja rao",
             "photo": "appu.png",
             "role": "designer",
             "social_media_links": [

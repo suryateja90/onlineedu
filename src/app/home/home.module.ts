@@ -16,11 +16,12 @@ import { HomeRoutingModule } from './home-routing.module';
 import { BlogcardsComponent } from './blogcards/blogcards.component';
 import { GenericPaginationComponent } from './generic-pagination/generic-pagination.component';
 import { RoadmapComponent } from './roadmap/roadmap.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
 
 
 
 @NgModule({
-  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent, GenericPaginationComponent, RoadmapComponent],
+  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent, GenericPaginationComponent, RoadmapComponent, TestimonialsComponent],
   imports: [
     CommonModule,
     NgbModule,

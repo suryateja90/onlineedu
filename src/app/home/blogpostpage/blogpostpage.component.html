@@ -24,9 +24,9 @@
           </div>
 
           <div class="entry-content">
-            <div *ngFor="let data of pageData.topics; let first = first;"> 
-              <div *ngFor="let paraData of data.paras; index as j">
-                <h3>{{data.heading}}</h3>
+            <div *ngFor="let data of pageData.topics;"> 
+              <div *ngFor="let paraData of data.paras; index as j; let first = first;">
+                <h3 *ngIf="first">{{data.heading}}</h3>
             <p>{{paraData.para}}</p>
           </div>
           <img src="{{data.image}}"  class="img-fluid" alt="">

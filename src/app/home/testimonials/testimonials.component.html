@@ -1,0 +1,32 @@
+<section id="test-section">
+    <div class="container">
+
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-md-12">
+                <h2 class="mb-5"><b>Testimonials</b></h2>
+                </div>
+                </div>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Carousel indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol> <!-- Wrapper for carousel items -->
+    <div class="carousel-inner">
+        <div class="item carousel-item" *ngFor="let t of tData; let ind = index; first as isFirst" [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' ">
+            <div class="img-box"><img src="{{t.profile_pic}}" alt=""></div>
+            <p class="testimonial">{{t.comments}}</p>
+            <p class="overview"><b>{{t.name}}</b>{{t.location}} </p>
+            <div class="star-rating"> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="15" height="15">
+                    <path fill="currentColor"
+                        d="M1728 647q0 22-26 48l-363 354 86 500q1 7 1 20 0 21-10.5 35.5t-30.5 14.5q-19 0-40-12l-449-236-449 236q-22 12-40 12-21 0-31.5-14.5t-10.5-35.5q0-6 2-20l86-500-364-354q-25-27-25-48 0-37 56-46l502-73 225-455q19-41 49-41t49 41l225 455 502 73q56 9 56 46z">
+                    </path>
+                </svg>  {{t.rating}}</div>
+        </div>
+    </div> <!-- Carousel controls --> <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev"> <i class="bi bi-chevron-left"></i> </a> <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next"> <i class="bi bi-chevron-right"></i> </a>
+</div>
+</div>
+</section>

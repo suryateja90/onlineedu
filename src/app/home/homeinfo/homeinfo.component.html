@@ -15,9 +15,10 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
                     <li class="nav-item me-2"><a class="nav-link" href="#">Product</a></li>
-                    <li class="nav-item me-2"><a class="nav-link" href="#">Company</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/supportinfo']">Support</a></li>
                     <li class="nav-item me-2"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/roadmap']">RoadMap</a></li>
                 </ul>
                 <div class="ms-auto"><a class="btn btn-outline-primary btn-outline-primary-custom me-2" href="#">Log In</a><a
                         class="btn btn-primary btn-primary-custom" href="#">Sign Up</a></div>
@@ -55,6 +56,7 @@
             </div>
              <!-- All course cards ends-->
 
+             <app-testimonials></app-testimonials>
              <div>
                 <app-blogcards></app-blogcards>
 

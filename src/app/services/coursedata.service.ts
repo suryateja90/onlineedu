@@ -90,4 +90,10 @@ export class CoursedataService {
     }
     return requestedObj;
   }
+
+  scroll(val) {
+    const elementList = document.querySelectorAll(val);
+    const element = elementList[0] as HTMLElement;
+    element.scrollIntoView({ behavior: 'smooth' })
+  }
 }

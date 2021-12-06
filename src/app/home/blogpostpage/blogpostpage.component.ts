@@ -13,6 +13,7 @@ export class BlogpostpageComponent implements OnInit {
   constructor(private cds: CoursedataService, private router:Router) { }
 
   ngOnInit() {
+    this.cds.scroll('#blog');
     if(this.cds.getBlogData()) {
       this.pageData = this.cds.getBlogData();
     } else {
