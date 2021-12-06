@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CoursedataService } from 'src/app/services/coursedata.service';
 
 @Component({
   selector: 'app-homeinfo',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeinfoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cds: CoursedataService) { }
 
   ngOnInit() {
+  }
+
+  scroll(v) {
+    this.cds.scroll(v);
   }
 
 }

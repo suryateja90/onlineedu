@@ -8,7 +8,7 @@
       </header>
       <div class="grid row">
         <div class="item col-lg-4 col-md-6" *ngFor="let m of map; index as i">
-          <h3 class="h5">Phase {{i+1}}</h3>
+          <h3 class="h5" style="margin-right: 7rem;line-height: 1;">Phase {{i+1}}</h3>
         <ul class="list-unstyled list pl-5" *ngFor="let g of m.goals">
             <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle"></i>{{g}}.</li>
         </ul>

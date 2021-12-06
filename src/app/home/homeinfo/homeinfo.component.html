@@ -14,10 +14,11 @@
             </button>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav position-absolute top-50 start-50 translate-middle">
-                    <li class="nav-item me-2"><a class="nav-link" href="#">Product</a></li>
+                    <li class="nav-item me-2"><a class="nav-link"  (click)="scroll('#home-explore-course')">Programs</a></li>
                     <li class="nav-item"><a class="nav-link" [routerLink]="['/supportinfo']">Support</a></li>
-                    <li class="nav-item me-2"><a class="nav-link" href="#">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" (click)="scroll('#test-section')">Testimonials</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" (click)="scroll('#why-us')">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" (click)="scroll('#contact')">Contact us</a></li>
                     <li class="nav-item"><a class="nav-link" [routerLink]="['/roadmap']">RoadMap</a></li>
                 </ul>
                 <div class="ms-auto"><a class="btn btn-outline-primary btn-outline-primary-custom me-2" href="#">Log In</a><a

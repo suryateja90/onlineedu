@@ -21,9 +21,9 @@ section.extra-features .item {
 }
 
 section.extra-features .item:hover {
-  background: #4c80e3;
-  -webkit-box-shadow: -5.665px 9.429px 35px 0px rgba(0,0,0,0.2);
-  box-shadow: -5.665px 9.429px 35px 0px rgba(0,0,0,0.2)
+  background: #696969;
+  -webkit-box-shadow: -5.665px 9.429px 35px 0px #000;
+  box-shadow: -5.665px 9.429px 35px 0px #000;
 }
 
 section.extra-features .item p {
@@ -33,7 +33,7 @@ section.extra-features .item p {
 }
 
 .bg-primary {
-  background-color: #5989e5 !important;
+  background-color: #696969 !important;
 }
 
 section header {
