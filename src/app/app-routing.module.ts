@@ -16,6 +16,10 @@ const routes: Routes = [
     loadChildren: './support/support.module#SupportModule'
   },
   {
+    path: 'consultancyinfo/:id',
+    loadChildren: () => import('./consultancy/consultancy.module').then(m => m.ConsultancyModule)
+  },
+  {
     path: '',
     redirectTo: 'courseinfo',
     pathMatch: 'full'

@@ -1,0 +1,10 @@
+<div [ngStyle]="{'background-image': 'url(' + dataCons.country_pic + ')'}" class="jumbotron bg-cover text-white">
+    <div class="container py-5 text-center">
+        <h1 class="display-4 font-weight-bold">Our Consultancy in {{dataCons.country}}</h1>
+        <p class="font-italic">{{dataCons.location}}
+        </p>
+    </div>
+</div>
+<app-skill-set></app-skill-set>
+<app-courserequirements [showRoles] = "displayRoles" [consData]="consReq"></app-courserequirements>
+<app-jobs></app-jobs>

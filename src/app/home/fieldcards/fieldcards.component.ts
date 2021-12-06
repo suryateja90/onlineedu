@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { consultancyData } from 'src/app/mock/consultancyprops';
+import { ActivatedRoute } from '@angular/router'
 
 @Component({
   selector: 'app-fieldcards',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FieldcardsComponent implements OnInit {
 
-  constructor() { }
+  categories = consultancyData.placements;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
+
+  getCategories() {
+    let data = consultancyData.placements;
+  }
+
+ 
 
 }

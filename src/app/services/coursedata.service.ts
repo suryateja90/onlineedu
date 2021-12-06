@@ -68,4 +68,26 @@ export class CoursedataService {
     }, [])
     return result;
   }
+
+
+  fetchConsultancy(repo, id, obj) 
+  {
+    let consultancyObj;
+    let data = repo;
+    var requestedObj: any;
+    data.filter((val) => {
+    if (val.id === id) {
+      consultancyObj = val;
+      return val;
+    }
+    })
+
+    for (let key in consultancyObj) {
+      if (obj === key) { 
+        requestedObj = consultancyObj[key];
+        break;
+      }
+    }
+    return requestedObj;
+  }
 }

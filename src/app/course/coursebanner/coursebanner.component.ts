@@ -23,4 +23,11 @@ export class CoursebannerComponent implements OnInit {
       this.cds.setTabMode(this.currentTab);
   }
 
+  scroll() {
+    // document.querySelector('#curriculum-section').scroll();
+    const elementList = document.querySelectorAll('#curriculum-section');
+   const element = elementList[0] as HTMLElement;
+   element.scrollIntoView({ behavior: 'smooth' })
+  }
+
 }

@@ -10,6 +10,7 @@ import { CoursedataService } from 'src/app/services/coursedata.service';
 export class CourserequirementsComponent implements OnInit {
 
   @Input() showRoles = true;
+  @Input() consData;
   eligibilities;
   jobs;
   course;
@@ -24,6 +25,9 @@ export class CourserequirementsComponent implements OnInit {
       this.course = element;
     }  
     });
+    if (this.consData) {
+      this.eligibilities['eligibilities'] = this.consData;
+    }
   }
 
   

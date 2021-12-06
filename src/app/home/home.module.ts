@@ -15,17 +15,18 @@ import { BlogpostpageComponent } from './blogpostpage/blogpostpage.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { BlogcardsComponent } from './blogcards/blogcards.component';
 import { GenericPaginationComponent } from './generic-pagination/generic-pagination.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 
 
 @NgModule({
-  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent, GenericPaginationComponent],
+  declarations: [HomeinfoComponent, ImagesliderComponent, CoursesectionComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, ContactformComponent, FootersectionComponent, TopbarComponent, BlogpostsComponent, BlogpostpageComponent, BlogcardsComponent, GenericPaginationComponent, RoadmapComponent],
   imports: [
     CommonModule,
     NgbModule,
     HomeRoutingModule
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  exports: [HomeinfoComponent, ImagesliderComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, BlogpostsComponent, BlogpostpageComponent]
+  exports: [HomeinfoComponent, RoadmapComponent, ImagesliderComponent, CourseinfoComponent, DesccardoneComponent, FieldcardsComponent, BlogpostsComponent, BlogpostpageComponent]
 })
 export class HomeModule { }

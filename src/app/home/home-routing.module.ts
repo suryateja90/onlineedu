@@ -4,6 +4,7 @@ import { HomeinfoComponent } from './homeinfo/homeinfo.component';
 import { BlogpostsComponent } from './blogposts/blogposts.component';
 import { BlogpostpageComponent } from './blogpostpage/blogpostpage.component';
 import { GenericPaginationComponent } from './generic-pagination/generic-pagination.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'pagin',
     component: GenericPaginationComponent
+  },
+  {
+    path: 'roadmap',
+    component: RoadmapComponent
   }
 ];
 

@@ -18,7 +18,8 @@
 }
 
 .who-can-apply-content ul {
-    padding: 10px 0 10px 30px
+    padding: 10px 0 10px 30px;
+    list-style-type: none;
 }
 
 .who-can-apply-content ul li {

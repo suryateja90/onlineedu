@@ -1,0 +1,20 @@
+<section id="jobs">
+<div class="container">
+<div class="section-title">
+    <h2>Jobs</h2>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-4 col-md-6" *ngFor="let j of jobs">
+      <div class="box aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+        <h3>{{j.job_title}}</h3>
+        <ul>
+          <li>Job Type: {{j.job_type}}</li>
+          <li>Package: {{j.package}}</li>
+          <li>Organization: {{j.organization}}</li>
+          <li class="na">Posted on {{j.job_posting}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+  </section>
